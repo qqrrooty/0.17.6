@@ -28,7 +28,7 @@ case "$ARCH" in
         exit 1
         ;;
 esac
-wget https://cf.ghproxy.cc/https://github.com/nezhahq/agent/releases/download/v0.17.6/nezha-agent_linux_$ARCH.zip -O nezha-agent.zip
+wget https://mirror.ghproxy.com/https://github.com/nezhahq/agent/releases/download/v0.17.6/nezha-agent_linux_$ARCH.zip -O nezha-agent.zip
 unzip nezha-agent.zip
 if command -v systemctl > /dev/null 2>&1; then
     systemctl stop nezha-agent
